@@ -2,17 +2,56 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="This page displays what our code would look like after CSS Variables are used and a Dark Mode toggle is created.">
-    <link rel="stylesheet" href="index.css">
-    <title>Dark Mode with CSS Variables</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="This page displays what our code would look like after CSS Variables are used and a Dark Mode toggle is created.">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon/site.webmanifest">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="index.css">
+  <title>Dark Mode with CSS Variables</title>
 </head>
 
-<body>
-    <p>Hello, World!</p>
+<body class="page dark">
+  <section class="content">
+    <div class="toggle transparency">
+      <input type="checkbox" id="theme" class="toggle-input" checked>
+      <label for="theme" class="toggle-label">
+        <img src="/images/sun.svg" alt="Dark mode" class="toggle-icon">
+      </label>
+    </div>
+    <h1 class="title">Dark Mode with CSS Variables</h1>
+    <h2 class="subtitle">A demostration</h2>
+    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis magna mollis, laoreet
+      risus in, hendrerit eros. Suspendisse ornare, ex ut hendrerit commodo, nunc enim gravida tellus, malesuada
+      eleifend diam felis non orci. Suspendisse porttitor consequat mi id efficitur. Mauris cursus dui vel mi
+      viverra, et viverra tellus rutrum. In rutrum mauris felis, sit amet aliquam ipsum vehicula id. Donec aliquam
+      tempor
+      quam, sed congue augue vehicula id. Aenean a ipsum hendrerit, facilisis velit in, semper sem. Nulla sed
+      lectus vel
+      sem lacinia suscipit non nec purus. Nulla eget magna dui. Pellentesque luctus orci eu lectus gravida, non
+      malesuada sem porta. Aliquam eu commodo nibh. Nulla facilisi.
+    </p>
+    <p class="paragraph quote">Suspendisse tincidunt fringilla metus tincidunt varius. Suspendisse rhoncus mattis
+      pellentesque. Sed cursus velit massa, a ultrices sem sollicitudin vel. Nullam faucibus metus tellus, eget
+      laoreet leo rutrum dapibus.
+    </p>
+    <p class="paragraph">Morbi non egestas nibh, in imperdiet ipsum. Integer vel vestibulum orci. Integer elementum
+      sem
+      enim, blandit viverra dolor accumsan ut. Nullam et lacinia eros. Cras sed posuere magna, ut elementum elit.
+      Curabitur ullamcorper accumsan fringilla. Etiam vestibulum lobortis nisi nec ornare. Pellentesque habitant
+      morbi
+      tristique senectus et netus et malesuada fames ac turpis egestas. Sed eget suscipit diam.
+    </p>
+  </section>
+  <footer class="footer"><a href="https://github.com/McCambley/dark-mode-demo" class="link" target="_blank"
+      rel="noopener noreferrer">&copy; 2021 - Jake
+      McCambley</a></footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

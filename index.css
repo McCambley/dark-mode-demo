@@ -1,1 +1,187 @@
 /* This style sheet contains what the project would look like after CSS Variables are used and a toggle is created */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,600;1,700;1,800&family=Pattaya&display=swap");
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Pattaya', sans-serif; */
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* * {
+  border: 1px solid red;
+} */
+
+.page {
+  position: relative;
+  background-color: var(--main-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  padding: 8px;
+}
+
+.light {
+  --main-bg: #dae3e5;
+  /* --text-bg: #bbd1ea;
+  --shadow: #a1c6ea; */
+  --text-sec: #507dbc;
+  --text-main: #16263b;
+}
+
+.dark {
+  --main-bg: #16263b;
+  /* --text-bg: #507dbc;
+  --shadow: #a1c6ea; */
+  --text-sec: #bbd1ea;
+  --text-main: #dae3e5;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 64px;
+}
+
+.logo {
+}
+
+.content {
+  /* border: 8px solid var(--shadow);
+  border-radius: 5px;
+  background-color: var(--text-bg);
+  box-shadow: 0 15px 15px black; */
+  max-width: 800px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-family: "Pattaya", sans-serif;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  font-size: 48px;
+  color: var(--text-main);
+}
+
+.subtitle {
+  font-family: "Pattaya", sans-serif;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  text-indent: 32px;
+  color: var(--text-sec);
+  margin-bottom: 32px;
+}
+
+.paragraph {
+  margin: 0;
+  margin-bottom: 1em;
+  color: var(--text-main);
+}
+
+.quote {
+  font-style: italic;
+  font-weight: 100;
+  padding: 0 32px;
+  font-size: 20px;
+  color: var(--text-sec);
+  border-left: 2px solid var(--text-main);
+  border-right: 2px solid var(--text-main);
+  text-align: center;
+}
+
+.paragraph:first-of-type {
+  text-indent: 32px;
+}
+
+.paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.footer {
+  justify-self: flex-end;
+  width: 100%;
+  text-align: right;
+  padding-right: 16px;
+  max-width: 800px;
+  color: var(--text-main);
+  font-size: 12px;
+}
+
+.link {
+  opacity: 0.5;
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  opacity: 1;
+}
+
+/* toggle stuff */
+
+.subtitle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.toggle {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.content:hover .toggle {
+  animation: wiggle 1s linear;
+}
+
+.toggle-icon {
+  width: 48px;
+}
+
+.toggle-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.transparency {
+  opacity: 1;
+  transition: all 0.1s ease;
+}
+
+.transparency:hover {
+  opacity: 0.7;
+}
