@@ -42,16 +42,16 @@ font-family: 'Pattaya', sans-serif; */
 
 .light {
   --main-bg: #dae3e5;
-  /* --text-bg: #bbd1ea;
-  --shadow: #a1c6ea; */
+  --text-bg: #bbd1ea;
+  --shadow: #a1c6ea;
   --text-sec: #507dbc;
   --text-main: #16263b;
 }
 
 .dark {
   --main-bg: #16263b;
-  /* --text-bg: #507dbc;
-  --shadow: #a1c6ea; */
+  --text-bg: #507dbc;
+  --shadow: #a1c6ea;
   --text-sec: #bbd1ea;
   --text-main: #dae3e5;
 }
@@ -150,14 +150,16 @@ font-family: 'Pattaya', sans-serif; */
 .toggle {
   position: relative;
   margin-bottom: 24px;
+  user-select: none;
 }
 
-.content:hover .toggle {
+.content:hover .toggle-icon {
   animation: wiggle 1s linear;
 }
 
 .toggle-icon {
-  width: 48px;
+  width: 28px;
+  user-select: none;
 }
 
 .toggle-input {
@@ -165,6 +167,7 @@ font-family: 'Pattaya', sans-serif; */
   top: 0;
   left: 0;
   opacity: 0;
+  user-select: none;
 }
 
 .toggle-label {
@@ -172,6 +175,22 @@ font-family: 'Pattaya', sans-serif; */
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  border: 3px solid var(--text-main);
+  padding: 4px;
+  border-radius: 50px;
+  width: 100px;
+  margin: 0 auto;
+  background-color: var(--text-bg);
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.toggle-label:hover {
+  background-color: var(--shadow);
+}
+
+.toggle-label:active {
+  transform: scale(0.95);
 }
 
 .transparency {
