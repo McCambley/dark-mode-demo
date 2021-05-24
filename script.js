@@ -26,9 +26,9 @@ function toggleTheme() {
 // Replace icons not able to be targeted by css variables
 function toggleIconTheme() {
   if (page.classList.contains("light")) {
-    toggleIcon.src = "/images/moon.svg";
+    toggleIcon.src = "./images/moon.svg";
   } else {
-    toggleIcon.src = "/images/sun.svg";
+    toggleIcon.src = "./images/sun.svg";
   }
 }
 

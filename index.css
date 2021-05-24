@@ -125,6 +125,7 @@ font-family: 'Pattaya', sans-serif; */
   max-width: 800px;
   color: var(--text-main);
   font-size: 12px;
+  margin-bottom: 8px;
 }
 
 .link {
