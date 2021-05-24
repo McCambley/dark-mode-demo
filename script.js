@@ -2,29 +2,34 @@ const page = document.querySelector(".page");
 const toggle = page.querySelector(".toggle-input");
 const toggleIcon = page.querySelector(".toggle-icon");
 
+// set theme and localStorage on page load
 setCheckedState();
 
-// Set state of checkbox then toggle theme accordingly
 function setCheckedState() {
+  // checks if localStorage has a "checked" value set at all
   if (!(localStorage.checked === undefined)) {
+    // if it does, it sets the state of the toggle accordingly
     toggle.checked = isTrue(localStorage.getItem("checked"));
+    // after setting the toggle state, the theme is adjusted according to the checked state
     toggleTheme();
   }
 }
 
-// Toggle theme based on state of checkbox
 function toggleTheme() {
+  // Toggle theme based on state of checkbox
   if (toggle.checked) {
     page.classList.replace("light", "dark");
   } else {
     page.classList.replace("dark", "light");
   }
+  // replace icons on page
   toggleIconTheme();
+  // set the value of the "checked" key in localStorage
   localStorage.setItem("checked", toggle.checked);
 }
 
-// Replace icons not able to be targeted by css variables
 function toggleIconTheme() {
+  // Replace icons not able to be targeted by css variables
   if (page.classList.contains("light")) {
     toggleIcon.src = "./images/moon.svg";
   } else {
@@ -32,10 +37,10 @@ function toggleIconTheme() {
   }
 }
 
-// convert string to boolean
 function isTrue(value) {
+  // convert string to boolean
   return value === "true";
 }
 
-// Event listeners
+// Toggle theme any time the state of the checkbox changes
 toggle.addEventListener("change", toggleTheme);
