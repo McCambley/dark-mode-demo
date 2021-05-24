@@ -2,7 +2,9 @@
 
 Create a dark mode toggle using CSS Variables and Javascript
 
-### [Demo](https://mccambley.github.io/dark-mode-demo/)
+### [Live Demo](https://mccambley.github.io/dark-mode-demo/)
+
+### [Codepen Demo](https://codepen.io/mccambley/pen/ExWmoQB)
 
 ## Overview
 
