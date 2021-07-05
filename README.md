@@ -1,19 +1,19 @@
-# Dark Mode with CSS Variables
+# Create a Dark Mode for your website
 
-Create a dark mode toggle using CSS Variables and Javascript
+## [Live Demo](https://mccambley.github.io/dark-mode-demo/)
 
-### [Live Demo](https://mccambley.github.io/dark-mode-demo/)
-
-### [Codepen Demo](https://codepen.io/mccambley/pen/ExWmoQB)
+## [Codepen Demo](https://codepen.io/mccambley/pen/ExWmoQB)
 
 ## Overview
 
-This project is a small demonstration on how to refactor a repository from using many individual color values accross a style sheet to using only a few attached to a consolidated class of CSS variables. Once set, not only is the code base more readable, but we can now create a custom checkbox in order to toggle a "Dark Mode" theme and a "Light Mode" theme very easily. This project two versions: a before refactoring and an after refactoring and toggle implimentation. Header [here](https://www.example.com) to view the project walkthrough.
+### This project is a demonstration intended to supplement a written walkthrough. The walkthrough details how to build a Dark Mode for a website using CSS Custom Properties and Vanilla Javascript and elaborates on the following steps:
 
-## Still to come
+1. Consolidate your pages color scheme into the root class using [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+2. Create a Dark Mode color scheme and create a class that will modify the root element
+3. Create a custom toggle button that will be used to turn Dark Mode on and off
+4. Switch the theme when the toggle is checked using Vanilla Javascript
+5. Make sure user settings are saved to the [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) property of the window object
 
-- Complete toggle functionality
-- Write up demo walkthrough in a Medium blog post
-- Share the blog post and
+## Head [here](https://jakemccambley.medium.com/create-a-dark-mode-for-your-website-d62e73a4275d) to view the project walkthrough.
 
-Enjoy!
+## Cheers! 🍻

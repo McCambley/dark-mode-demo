@@ -36,8 +36,10 @@ function toggleIconTheme() {
   // Replace icons not able to be targeted by css variables
   if (page.classList.contains('light')) {
     toggleIcon.src = './images/moon.svg';
+    toggleIcon.alt = 'Switch to Dark Mode';
   } else {
     toggleIcon.src = './images/sun.svg';
+    toggleIcon.alt = 'Switch to Light Mode';
   }
 }
 
